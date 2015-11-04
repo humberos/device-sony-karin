@@ -33,6 +33,10 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
 
+# Recovery
+PRODUCT_COPY_FILES += \
+    device/sony/karin/recovery/root/etc/bootrec-device:recovery/root/etc/bootrec-device
+
 # Override Product Name for OmniROM
 PRODUCT_NAME := omni_karin
 PRODUCT_MODEL := Xperia Z4 Tablet
