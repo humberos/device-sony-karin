@@ -15,6 +15,9 @@
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/sony/msm
 
+# Bootanimation
+TARGET_BOOTANIMATION_SIZE := 960x640
+
 # Inherit AOSP Kitakami common device parts
 $(call inherit-product, device/sony/karin/aosp_sgp771.mk)
 
