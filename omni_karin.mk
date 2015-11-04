@@ -18,6 +18,9 @@ TARGET_KERNEL_SOURCE := kernel/sony/msm
 # Bootanimation
 TARGET_BOOTANIMATION_SIZE := 960x640
 
+# Don't use DSPManager
+TARGET_NO_DSPMANAGER := true
+
 # Inherit AOSP Kitakami common device parts
 $(call inherit-product, device/sony/karin/aosp_sgp771.mk)
 
