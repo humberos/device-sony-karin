@@ -33,6 +33,9 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
 
+# Inherit TWRP requirements
+$(call inherit-product, device/sony/karin/twrp.mk)
+
 # Recovery
 PRODUCT_COPY_FILES += \
     device/sony/karin/recovery/root/etc/bootrec-device:recovery/root/etc/bootrec-device
